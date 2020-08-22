@@ -1,0 +1,141 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>init</title>
+</head>
+<body>
+    <header class="text-gray-700 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a href="{% url 'homePage' %}" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <img src="{% static 'pes.png' %}" alt="" width="150px" height="150px">
+            <span class="ml-3 text-xl">INIT</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+              <a href="/" class="mr-5 hover:text-gray-900">HOME</a>
+              <a href="/" class="mr-5 hover:text-gray-900">EVENTS</a>
+              <a href="{% url 'faculty' %}" class="mr-5 hover:text-gray-900">FACULTY</a>
+              <a href="/" class="mr-5 hover:text-gray-900">ABOUT</a>
+          </nav>
+          <!-- <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Button
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button> -->
+        </div>
+      </header>
+
+      <section class="text-gray-500 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">OUR RESPONSIBLE FACULTIES</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Our members of the faculty are professional
+                 and committed to time spent on teaching, research, student advising, clinical activities and various 
+                 kinds of University or outside professional service on committees and in administrative
+                  or advisory roles throughout the academic year</p>
+          </div>
+          
+            <div class="lg:w-1/4 mx-auto px-5 py-20">
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{% static 'faculty/Veena s 960X960.jpg' %}">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Dr. Veena S</h2>
+                  <h1 class="title-font text-lg font-medium text-white mb-3">Head Of the Department</h1>
+                  <p class="leading-relaxed">Computer Applications</p>
+                </div>
+              </div>
+            </div>
+
+
+        <div class="flex flex-wrap -m-4 " >
+            <div class="lg:w-1/3 mx-auto px-20 py-1">
+                <div class="flex relative">
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{% static 'faculty/Lekha_CA-263x263.jpg' %}">
+                  <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Dr. Lekha A</h2>
+                    <h1 class="title-font text-lg font-medium text-white mb-3">Associate Professor</h1>
+                    <p class="leading-relaxed">Computer Applications</p>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:w-1/3 mx-auto px-20 py-1">
+                <div class="flex relative">
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{% static 'faculty/Thebmozhi 960X960.jpg' %}">
+                  <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Dr. Thenmozhi S</h2>
+                    <h1 class="title-font text-lg font-medium text-white mb-3">Associate Professor</h1>
+                    <p class="leading-relaxed">Computer Applications</p>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:w-1/3 mx-auto px-20 py-1">
+                <div class="flex relative">
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{% static 'faculty/Sreenivas_CA-263x263.jpg' %}">
+                  <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Mr. Sreenivas P</h2>
+                    <h1 class="title-font text-lg font-medium text-white mb-3">Associate Professor</h1>
+                    <p class="leading-relaxed">Computer Applications</p>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:w-1/3 mx-auto px-20 py-5">
+                <div class="flex relative">
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{% static 'faculty/Tamal Day 960X960.jpg' %}">
+                  <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Mr. Tamal Dey</h2>
+                    <h1 class="title-font text-lg font-medium text-white mb-3">Associate Professor</h1>
+                    <p class="leading-relaxed">Computer Applications</p>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:w-1/3 mx-auto px-20 py-5">
+                <div class="flex relative">
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{% static 'faculty/Santosh-Katti_CA-263x263.jpg' %}">
+                  <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Mr. Santosh S Katti</h2>
+                    <h1 class="title-font text-lg font-medium text-white mb-3">Associate Professor</h1>
+                    <p class="leading-relaxed">Computer Applications</p>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:w-1/3 mx-auto px-20 py-5">
+                <div class="flex relative">
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{% static 'faculty/Prema latha 960X960.jpg' %}">
+                  <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Ms. Premalatha HM</h2>
+                    <h1 class="title-font text-lg font-medium text-white mb-3">Associate Professor</h1>
+                    <p class="leading-relaxed">Computer Applications</p>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:w-1/3 mx-auto px-20 py-5">
+                <div class="flex relative">
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{% static 'faculty/Archana 960X960.jpg' %}">
+                  <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Ms. Archana A</h2>
+                    <h1 class="title-font text-lg font-medium text-white mb-3">Associate Professor</h1>
+                    <p class="leading-relaxed">Computer Applications</p>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:w-1/3 mx-auto px-20 py-5">
+                <div class="flex relative">
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{% static 'faculty/Deepthi.png' %}">
+                  <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Ms. Deepthi S Narayan</h2>
+                    <h1 class="title-font text-lg font-medium text-white mb-3">Associate Professor</h1>
+                    <p class="leading-relaxed">Computer Applications</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+</body>
+</html>
