@@ -7,3 +7,6 @@ def home_page(request):
     
 def faculty(request):
     return render(request,'home/faculty.html')
+
+def publications(request):
+    return render(request,'home/publications.html')
