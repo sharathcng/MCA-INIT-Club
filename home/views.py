@@ -10,3 +10,6 @@ def faculty(request):
 
 def publications(request):
     return render(request,'home/publications.html')
+
+def committee(request):
+    return render(request,'home/committee.html')
